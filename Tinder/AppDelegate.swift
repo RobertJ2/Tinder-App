@@ -20,11 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let config = ParseClientConfiguration { (theConfig) in
             theConfig.applicationId = "myTinderCloneisgoingtobeawesome"
-            theConfig.server = "http://yourappname.herokuapp.com/parse"
+            theConfig.server = "http://tinderserver01.herokuapp.com/parse"
             theConfig.clientKey = "myapppisgoingtobethebommbbbbbbbie"
         }
         
         Parse.initialize(with: config)
+        
+        //parse-dashboard --appId myTinderCloneisgoingtobeawesome --masterKey myapppisgoingtobethebommbbbbbbbie --serverURL "http://tinderserver01.herokuapp.com/parse"
+
+        
         
         return true
     }
