@@ -51,6 +51,7 @@ class LogInViewController: UIViewController {
                     
                 } else {
                     print("Sign Up Successful")
+                    self.performSegue(withIdentifier: "updateSegue", sender: nil)
                 }
             })
         } else {
@@ -71,6 +72,7 @@ class LogInViewController: UIViewController {
                             
                         } else {
                             print("Login Successful")
+                            self.performSegue(withIdentifier: "updateSegue", sender: nil)
                         }
                     }
                 }
@@ -78,6 +80,13 @@ class LogInViewController: UIViewController {
           
         }
         
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if PFUser.current() != nil {
+            self.performSegue(withIdentifier: "updateSegue", sender: nil)
+        }
     }
     
     
