@@ -30,6 +30,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wy-cy-u3Q">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="3NX-Si-qxf">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="8AD-vP-e79">
+                                            <connections>
+                                                <action selector="logoutTapped:" destination="BYZ-38-t0r" id="WrM-iu-7hp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -40,11 +53,12 @@
                     </view>
                     <connections>
                         <outlet property="swipeLabel" destination="qtW-ca-mCc" id="3pF-Co-csv"/>
+                        <segue destination="2nb-oe-8nj" kind="presentation" identifier="viewLogOutSegue" id="3Iz-cg-JT2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="39"/>
+            <point key="canvasLocation" x="2156" y="42"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="L09-pI-pT0">
@@ -135,6 +149,7 @@
                         <outlet property="passwordTextField" destination="cks-U0-sev" id="AbX-6T-EAn"/>
                         <outlet property="usernameTextField" destination="uGB-Nl-rvM" id="VHe-bm-fyF"/>
                         <segue destination="1HZ-ZE-Ufe" kind="presentation" identifier="updateSegue" id="aNk-Q6-nmy"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginToSwipingSegue" id="Gku-bw-PkC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dN9-IP-G0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,14 +268,18 @@
                         <outlet property="interestedGenderSwitch" destination="SGp-xI-BJk" id="koH-qz-YNg"/>
                         <outlet property="profileImageView" destination="3TO-sW-449" id="gsZ-Rf-mWA"/>
                         <outlet property="userGenderSwitch" destination="Ovb-5s-i95" id="5sP-ik-vA7"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="updateToSwipeSegue" id="fsg-Yc-zQS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpX-fE-oay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404" y="42"/>
+            <point key="canvasLocation" x="1474" y="-436"/>
         </scene>
     </scenes>
     <resources>
         <image name="user" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gku-bw-PkC"/>
+    </inferredMetricsTieBreakers>
 </document>

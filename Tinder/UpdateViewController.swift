@@ -117,6 +117,8 @@ class UpdateViewController: UIViewController, UINavigationControllerDelegate, UI
                         
                     } else {
                         print("Update Successful")
+                        
+                        self.performSegue(withIdentifier: "updateToSwipeSegue", sender: nil)
                     }
                 })
             }

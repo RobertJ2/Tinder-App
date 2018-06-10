@@ -24,6 +24,15 @@ class ViewController: UIViewController {
         swipeLabel.addGestureRecognizer(gesture)
     }
     
+    
+    @IBAction func logoutTapped(_ sender: Any) {
+        PFUser.logOut()
+        performSegue(withIdentifier: "viewLogOutSegue", sender: nil)
+        
+    }
+    
+    
+    
     @objc func wasDragged(gestureRecognizer: UIPanGestureRecognizer) {
         
         let labelPoint = gestureRecognizer.translation(in: view)

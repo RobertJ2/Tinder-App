@@ -72,7 +72,13 @@ class LogInViewController: UIViewController {
                             
                         } else {
                             print("Login Successful")
-                            self.performSegue(withIdentifier: "updateSegue", sender: nil)
+                            if user?["isFemale"] != nil {
+                                self.performSegue(withIdentifier: "loginToSwipingSegue", sender: nil)
+                            } else {
+                                self.performSegue(withIdentifier: "updateSegue", sender: nil)
+                            }
+                            
+                          
                         }
                     }
                 }
@@ -85,7 +91,12 @@ class LogInViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if PFUser.current() != nil {
+            
+            if PFUser.current()?["isFemale"] != nil {
+             self.performSegue(withIdentifier: "loginToSwipingSegue", sender: nil)
+            } else {
             self.performSegue(withIdentifier: "updateSegue", sender: nil)
+            }
         }
     }
     
