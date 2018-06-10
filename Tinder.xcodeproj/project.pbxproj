@@ -14,6 +14,8 @@
 		295AA42620C9F4C7007DCEFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295AA42420C9F4C7007DCEFC /* LaunchScreen.storyboard */; };
 		295AA42E20CA1C78007DCEFC /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AA42D20CA1C78007DCEFC /* LogInViewController.swift */; };
 		295AA43020CA2578007DCEFC /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AA42F20CA2578007DCEFC /* UpdateViewController.swift */; };
+		295AA43220CDA6DD007DCEFC /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AA43120CDA6DD007DCEFC /* MatchesViewController.swift */; };
+		295AA43420CDAACB007DCEFC /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AA43320CDAACB007DCEFC /* MatchTableViewCell.swift */; };
 		A42B9354D4E42627F3FEE0B9 /* Pods_Tinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603B77E814811540ECCB9BD5 /* Pods_Tinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		295AA42720C9F4C7007DCEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		295AA42D20CA1C78007DCEFC /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		295AA42F20CA2578007DCEFC /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		295AA43120CDA6DD007DCEFC /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		295AA43320CDAACB007DCEFC /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		2FD3D8E688CE4AC43165A933 /* Pods-Tinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinder/Pods-Tinder.debug.xcconfig"; sourceTree = "<group>"; };
 		603B77E814811540ECCB9BD5 /* Pods_Tinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8BCEE57DE19467DE96C286 /* Pods-Tinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tinder/Pods-Tinder.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				295AA41B20C9F4C2007DCEFC /* AppDelegate.swift */,
 				295AA41D20C9F4C2007DCEFC /* ViewController.swift */,
 				295AA41F20C9F4C2007DCEFC /* Main.storyboard */,
+				295AA43120CDA6DD007DCEFC /* MatchesViewController.swift */,
+				295AA43320CDAACB007DCEFC /* MatchTableViewCell.swift */,
 				295AA42F20CA2578007DCEFC /* UpdateViewController.swift */,
 				295AA42D20CA1C78007DCEFC /* LogInViewController.swift */,
 				295AA42220C9F4C7007DCEFC /* Assets.xcassets */,
@@ -209,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				295AA41E20C9F4C2007DCEFC /* ViewController.swift in Sources */,
+				295AA43420CDAACB007DCEFC /* MatchTableViewCell.swift in Sources */,
 				295AA41C20C9F4C2007DCEFC /* AppDelegate.swift in Sources */,
+				295AA43220CDA6DD007DCEFC /* MatchesViewController.swift in Sources */,
 				295AA42E20CA1C78007DCEFC /* LogInViewController.swift in Sources */,
 				295AA43020CA2578007DCEFC /* UpdateViewController.swift in Sources */,
 			);
