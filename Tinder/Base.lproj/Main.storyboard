@@ -94,26 +94,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="2vI-19-npQ">
-                                                    <rect key="frame" x="1" y="5" width="177.5" height="177.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" misplaced="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="2vI-19-npQ">
+                                                    <rect key="frame" x="1" y="1" width="124" height="168"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="2vI-19-npQ" secondAttribute="height" multiplier="1:1" id="2Fc-f4-fah"/>
+                                                        <constraint firstAttribute="width" secondItem="2vI-19-npQ" secondAttribute="height" multiplier="1:1" constant="1" id="2Fc-f4-fah"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is ghoing to be the best and you know it boyyyyy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVo-yh-dbF">
-                                                    <rect key="frame" x="184" y="16" width="171" height="41"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="this is ghoing to be the best and you know it boyyyyy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVo-yh-dbF">
+                                                    <rect key="frame" x="133" y="16" width="222" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhl-fp-Mzz">
-                                                    <rect key="frame" x="184" y="62" width="171" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhl-fp-Mzz">
+                                                    <rect key="frame" x="133" y="62" width="222" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-cS-ptx">
-                                                    <rect key="frame" x="319" y="152" width="36" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-cS-ptx">
+                                                    <rect key="frame" x="259" y="135" width="96" height="47"/>
                                                     <state key="normal" title="Send"/>
                                                     <connections>
                                                         <action selector="sendTapped:" destination="krA-Nl-Oh5" eventType="touchUpInside" id="dkf-4g-dDJ"/>
@@ -121,18 +121,31 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="2vI-19-npQ" firstAttribute="top" secondItem="cvr-DW-lwJ" secondAttribute="top" constant="5" id="58R-4o-Hmd"/>
                                                 <constraint firstItem="lhl-fp-Mzz" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="7oP-xJ-ggT"/>
+                                                <constraint firstItem="2vI-19-npQ" firstAttribute="leading" secondItem="cvr-DW-lwJ" secondAttribute="leading" constant="1" id="9Iu-w6-l40"/>
+                                                <constraint firstItem="lhl-fp-Mzz" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="AGD-2A-L6b"/>
                                                 <constraint firstItem="XVo-yh-dbF" firstAttribute="top" secondItem="cvr-DW-lwJ" secondAttribute="topMargin" constant="5" id="E41-6F-7GY"/>
                                                 <constraint firstAttribute="bottom" secondItem="2vI-19-npQ" secondAttribute="bottom" constant="5" id="EYh-fK-AmB"/>
+                                                <constraint firstItem="lhl-fp-Mzz" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="FCi-Hu-ErI"/>
+                                                <constraint firstItem="2vI-19-npQ" firstAttribute="leading" secondItem="cvr-DW-lwJ" secondAttribute="leading" constant="1" id="FKj-0A-uTq"/>
+                                                <constraint firstAttribute="bottom" secondItem="2vI-19-npQ" secondAttribute="bottom" constant="1" id="NYW-or-Csk"/>
+                                                <constraint firstItem="lhl-fp-Mzz" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="Nq7-f5-eya"/>
                                                 <constraint firstItem="XVo-yh-dbF" firstAttribute="top" secondItem="cvr-DW-lwJ" secondAttribute="topMargin" constant="5" id="TKp-vy-IPv"/>
                                                 <constraint firstItem="lhl-fp-Mzz" firstAttribute="top" secondItem="XVo-yh-dbF" secondAttribute="bottom" constant="5" id="Tzw-qu-hEf"/>
                                                 <constraint firstItem="2vI-19-npQ" firstAttribute="leading" secondItem="cvr-DW-lwJ" secondAttribute="leading" constant="1" id="WAr-ta-di3"/>
+                                                <constraint firstItem="lhl-fp-Mzz" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="WIH-hX-xn3"/>
+                                                <constraint firstItem="2vI-19-npQ" firstAttribute="top" secondItem="cvr-DW-lwJ" secondAttribute="top" constant="5" id="XYj-MG-5cF"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="SY2-cS-ptx" secondAttribute="trailing" constant="5" id="YG9-F6-uYF"/>
                                                 <constraint firstItem="SY2-cS-ptx" firstAttribute="bottom" secondItem="cvr-DW-lwJ" secondAttribute="bottomMargin" constant="5" id="bCj-T2-W0q"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="XVo-yh-dbF" secondAttribute="trailing" constant="5" id="cGh-Uy-N61"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="lhl-fp-Mzz" secondAttribute="trailing" constant="5" id="cgp-9I-089"/>
+                                                <constraint firstItem="XVo-yh-dbF" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="8" id="eHj-vR-M6H"/>
+                                                <constraint firstItem="XVo-yh-dbF" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="fJk-Xc-noX"/>
+                                                <constraint firstItem="XVo-yh-dbF" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="8" id="fan-0Q-vUv"/>
                                                 <constraint firstItem="2vI-19-npQ" firstAttribute="top" secondItem="cvr-DW-lwJ" secondAttribute="top" constant="5" id="hwJ-fY-aRL"/>
                                                 <constraint firstItem="XVo-yh-dbF" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="nWU-l9-6Hc"/>
+                                                <constraint firstItem="XVo-yh-dbF" firstAttribute="leading" secondItem="2vI-19-npQ" secondAttribute="trailing" constant="5" id="nd7-W8-wn3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
